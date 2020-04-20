@@ -28,11 +28,11 @@ class App extends React.Component {
         const { data, country } = this.state;
         return(
             <div className={styles.container}>
-                <img className={styles.image} src={covidImage} alt='covid-19'/>
+                <img className={styles.image} src={covidImage} alt='covid-19' />
                 <h2 className={styles.power}>WebApp created by <a href="https://caslify.com.ng/" className={styles.cass} rel="noopener noreferrer" target="_blank">Caslify</a></h2>
-                <Cards data={data} />
+                <Cards data={data}/>
                 <CountryPicker  handleCountryChange={this.handleCountryChange}/>
-                <Chart data={data} country={country} />
+                <Chart data={data} country={country}/>
             </div>
         )
     }
